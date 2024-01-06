@@ -741,7 +741,7 @@
                 <p style="font-size: 24px;"><b>Password must contains</b></p><br>
                 <li>
                   <i class="fa-solid fa-circle"></i>
-                  <span>At least 8 characters length</span>
+                  <span>Between 8 and 16 characters in length</span>
                 </li>
                 <li>
                   <i class="fa-solid fa-circle"></i>
@@ -810,7 +810,7 @@
     // An array of password requirements with corresponding 
     // regular expressions and index of the requirement list item
     const requirements = [
-      { regex: /.{8,}/, index: 0 }, // Minimum of 8 characters
+      { regex: /.{8,16}/, index: 0 }, // Minimum of 8 characters
       { regex: /[0-9]/, index: 1 }, // At least one number
       { regex: /[a-z]/, index: 2 }, // At least one lowercase letter
       { regex: /[^A-Za-z0-9]/, index: 3 }, // At least one special character
